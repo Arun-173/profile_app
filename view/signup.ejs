@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro-Fi|SignUp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/logout">Logout</a></li>
+    </ul>
+
+    <form id="signpage" action="/signup" method="POST">
+
+        <Label for="username">User Name</Label><br>
+        <input type="text" name="username" id="username" placeholder="Abcde" minlength="3" maxlength="12"><br><br>
+        <Label for="email">Email Id</Label><br>
+        <input type="email" name="email" id="email" placeholder="abc123@gmail.com" required><br><br>
+        <label for="password">Password</label><br>
+        <input type="password" name="password" id="password" placeholder="************" minlength="6" maxlength="12"><br><br>
+        <button>Sign Up</button>
+    </form>
+
+    <p>
+        If you have account, click to
+        <button>
+            <a href="/login">Login</a>
+        </button>
+    </p>
+</body>
+
+</html>
